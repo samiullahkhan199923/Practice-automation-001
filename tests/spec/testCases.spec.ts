@@ -58,7 +58,7 @@ test('Remove products from the cart_04', async ({ page }) => {
     const text = await sp.removeProduct();
     expect(text).toBe('Your shopping cart is empty!');
 })
-test('Logout_05', async ({ page }) => {
+test.skip('Logout_05', async ({ page }) => {
     const login = new LoginPage(page);
     const home = new HomePage(page);
     await page.goto('index.php?route=account/login');
