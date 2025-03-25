@@ -68,7 +68,7 @@ test('Logout_05', async ({ page }) => {
     const text = await home.clickOnLogout();
     expect(text).toBe(' Account Logout');
 })
-test.only('editFirstName', async ({ page }) => {
+test('editFirstName', async ({ page }) => {
     const login = new LoginPage(page);
     const home = new HomePage(page);
     await page.goto('index.php?route=account/login');
